@@ -7,3 +7,4 @@ print("Kelvin = ",k)
 #Celsius to Fahrenheit
 f = c * 9/5 + 32 
 print("Fahrenheit = ",f)
+#By TheGoogleRider

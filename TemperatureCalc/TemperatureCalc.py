@@ -3,7 +3,7 @@
 # Simple Temperature Converter in Python
 #
 # author: @TheGoogleRider
-# version: 1.0
+# version: 2.0
 # date: 04/03/2022
 
 print("Enter '1' for Celsius")
