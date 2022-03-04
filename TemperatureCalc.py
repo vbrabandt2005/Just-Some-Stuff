@@ -6,15 +6,11 @@
 # version: 1.0
 # date: 04/03/2022
 
-
-
 print("Enter '1' for Celsius")
 print("Enter '2' for Fahrenheit")
 print("Enter '3' for Kelvin")
 n = int(input("Enter the unit you want to convert: "))
-
 for i in range(0,n):
-    
     if (n == 1):
         c = float(input("Input Celsius: "))
         print()
@@ -25,19 +21,8 @@ for i in range(0,n):
         #Celsius to Fahrenheit
         f = c * 9/5 + 32 
         print("Fahrenheit = ",f)
-
+        exit()
     elif (n == 2):
-        k = float(input("Input Kelvin: "))
-        print()
-        print("Kelvin Input = ",k)
-        #Kelvin to Celcius
-        c = k - 273.15
-        print("Celsius = ",c)
-        #Kelvin to Fahrenheit
-        f = k - 273.15 * 9/5 + 32
-        print("Fahrenheit = ",f)
-
-    elif (n == 3):
         f = float(input("Input Fahrenheit: "))
         print()
         print("Fahrenheit Input = ",f)
@@ -47,7 +32,19 @@ for i in range(0,n):
         #Fahrenheit to Kelvin
         k = (f - 32) * 5/9 + 273.15
         print("Kelvin = ",k)
-        
+        exit()
+    elif (n == 3):
+        k = float(input("Input Kelvin: "))
+        print()
+        print("Kelvin Input = ",k)
+        #Kelvin to Celcius
+        c = k - 273.15
+        print("Celsius = ",c)
+        #Kelvin to Fahrenheit
+        f = (k - 273.15) * 9/5 + 32
+        print("Fahrenheit = ",f)
+        exit()
     else:
         print("Please enter an option from the screen")
-          
+        exit()
+#By TheGoogleRider
