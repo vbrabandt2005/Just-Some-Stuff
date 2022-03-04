@@ -10,13 +10,14 @@
 from secrets import choice
 
 
-n = input("Enter the unit you want to convert: ")
+
+n = int(input("Enter the unit you want to convert: "))
+print("Enter '1' for Celsius")
+print("Enter '2' for Fahrenheit")
+print("Enter '3' for Kelvin")
 
 for i in range(0,n):
-    print("Enter '1' for Celsius\n")
-    print("Enter '2' for Fahrenheit\n")
-    print("Enter '3' for Kelvin\n")
-
+    
     if (choice == 1):
         c = float(input("Input Celsius: "))
         print()
@@ -27,8 +28,18 @@ for i in range(0,n):
         #Celsius to Fahrenheit
         f = c * 9/5 + 32 
         print("Fahrenheit = ",f)
-    if (choice == 2):
-        print("pp")
-    if (choice == 3):
+    elif (choice == 2):
+        k = float(input("Input Kelvin: "))
+        print()
+        print("Kelvin Input = ",k)
+        #Kelvin to Celcius
+        c = k - 273.15
+        print("Celsius = ",c)
+        f = k - 273.15 * 9/5 + 32
+        print("Fahrenheit = ",f)
+    elif (choice == 3):
         print("PooPoo")    
+
+    else:
+        print("Please enter an option from the screen")
           
