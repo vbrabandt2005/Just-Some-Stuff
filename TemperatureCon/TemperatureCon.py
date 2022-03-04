@@ -1,4 +1,4 @@
-# name: TemperatureCalc
+# name: TemperatureCon
 # description:
 # Simple Temperature Converter in Python
 #
