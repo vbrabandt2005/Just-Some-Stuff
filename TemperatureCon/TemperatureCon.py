@@ -3,8 +3,8 @@
 # Simple Temperature Converter in Python
 #
 # author: @TheGoogleRider
-# version: 2.0
-# date: 04/03/2022
+# version: 2.1
+# date: 06/09/2022
 
 print("Enter '1' for Celsius")
 print("Enter '2' for Fahrenheit")
@@ -14,17 +14,17 @@ for _ in range(n):
     if n == 1:
         c = float(input("Input Celsius: "))
         print()
-        print("Celsius Input = ",c)
+        print("Celsius Input =",c)
         #Celsius to Kelvin
         k = c + 273.15
-        print("Kelvin = ",k)
+        print("Kelvin =",k)
         #Celsius to Fahrenheit
         f = c * 9/5 + 32
-        print("Fahrenheit = ",f)
+        print("Fahrenheit =",f)
     elif n == 2:
         f = float(input("Input Fahrenheit: "))
         print()
-        print("Fahrenheit Input = ",f)
+        print("Fahrenheit Input =",f)
         #Kelvin to Celcius
         c = (f - 32) * 5/9
         print("Celsius = ",c)
@@ -34,13 +34,13 @@ for _ in range(n):
     elif n == 3:
         k = float(input("Input Kelvin: "))
         print()
-        print("Kelvin Input = ",k)
+        print("Kelvin Input =",k)
         #Kelvin to Celcius
         c = k - 273.15
-        print("Celsius = ",c)
+        print("Celsius =",c)
         #Kelvin to Fahrenheit
         f = (k - 273.15) * 9/5 + 32
-        print("Fahrenheit = ",f)
+        print("Fahrenheit =",f)
     else:
         print("Please enter an option from the screen")
     exit()
