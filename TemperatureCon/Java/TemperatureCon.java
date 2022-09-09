@@ -26,7 +26,7 @@ public class TemperatureCon{
             int unit = sc.nextInt();
             System.out.println();
 
-            boolean ChooseOption = false;
+            boolean ChooseOption = true;
             while(ChooseOption){
                 
                 if(unit==1){ //Celcius Input
@@ -52,7 +52,7 @@ public class TemperatureCon{
                     double k = (f - 32) * 5/9 + 273.15;
                     System.out.println("Kelvin = "+k);
 
-                    ChooseOption = true;
+                    ChooseOption = false;
                 }
 
                 else if(unit==3){ //Kelvin Input
@@ -70,8 +70,6 @@ public class TemperatureCon{
             
                 else{
                     System.out.println("Please enter a proper Unit");
-
-                    ChooseOption = false;
                 }
             }
         }
