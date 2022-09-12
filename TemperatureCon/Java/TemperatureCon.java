@@ -1,6 +1,4 @@
 package TemperatureCon.Java;
-import java.util.*;
-
 /**
  * name: TemperatureCon
  * description:
@@ -11,6 +9,7 @@ import java.util.*;
  * date: 09/09/2022
 **/
 
+import java.util.*;
 
 public class TemperatureCon{
     public static void main(String[] args){
@@ -75,4 +74,7 @@ public class TemperatureCon{
         }
     }
 }
+
+
+
 //By TheGoogleRider
