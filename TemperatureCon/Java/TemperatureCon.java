@@ -5,8 +5,8 @@ package TemperatureCon.Java;
  * Simple Temperature Converter in Java
  * 
  * author: @TheGoogleRider
- * version: (1.0)
- * date: 09/09/2022
+ * version: (1.2)
+ * date: 12/09/2022
 **/
 
 import java.util.*;
@@ -25,56 +25,45 @@ public class TemperatureCon{
             int unit = sc.nextInt();
             System.out.println();
 
-            boolean ChooseOption = true;
-            while(ChooseOption){
                 
-                if(unit==1){ //Celcius Input
-                    System.out.print("Input Celcius: ");
-                    double c = sc.nextDouble();
-                    System.out.println();
+            if(unit==1){ //Celcius Input
+                System.out.print("Input Celcius: ");
+                double c = sc.nextDouble();
+                System.out.println();
                     
-                    double f = c * 9/5 + 32;
-                    System.out.println("Fahrenheit = "+f);
-                    double k = c + 273.15;
-                    System.out.println("Kelvin = "+k);
-
-                    ChooseOption = false;
+                double f = c * 9/5 + 32;
+                System.out.println("Fahrenheit = "+f);
+                double k = c + 273.15;
+                System.out.println("Kelvin = "+k); 
                 }
             
-                else if(unit==2){ //Fahrenheit Input
-                    System.out.print("Input Fahrenheit: ");
-                    double f = sc.nextDouble();
-                    System.out.println();
+            else if(unit==2){ //Fahrenheit Input
+                System.out.print("Input Fahrenheit: ");
+                double f = sc.nextDouble();
+                System.out.println();
 
-                    double c = (f - 32) * 5/9;
-                    System.out.println("Celcius = "+c);
-                    double k = (f - 32) * 5/9 + 273.15;
-                    System.out.println("Kelvin = "+k);
-
-                    ChooseOption = false;
+                double c = (f - 32) * 5/9;
+                System.out.println("Celcius = "+c);
+                double k = (f - 32) * 5/9 + 273.15;
+                System.out.println("Kelvin = "+k);  
                 }
 
-                else if(unit==3){ //Kelvin Input
-                    System.out.print("Input Kelvin: ");
-                    double k = sc.nextDouble();
-                    System.out.println();
+            else if(unit==3){ //Kelvin Input
+                System.out.print("Input Kelvin: ");
+                double k = sc.nextDouble();
+                System.out.println();
 
-                    double c = k - 273.15;
-                    System.out.println("Celcius = "+c);
-                    double f = (k - 273.15) * 9/5 + 32;
-                    System.out.println("Fahrenheit = "+f);
-
-                    ChooseOption = false;
+                double c = k - 273.15;
+                System.out.println("Celcius = "+c);
+                double f = (k - 273.15) * 9/5 + 32;
+                System.out.println("Fahrenheit = "+f);
                 }
             
-                else{
-                    System.out.println("Please enter a proper Unit");
+            else{
+                System.out.println("Please enter a proper Unit");
                 }
-            }
         }
     }
 }
-
-
 
 //By TheGoogleRider
