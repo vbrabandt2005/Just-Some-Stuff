@@ -4,7 +4,7 @@
  * Simple Leap year checker, enter a year and it will check it for you
  * 
  * author: @TheGoogleRider2
- * version: (V.1.1)
+ * version: (V1.1)
  * date: 12/09/2022
 **/ 
 
@@ -27,7 +27,7 @@ public class Leapchecker{
 
             if (year >= a && b >= year){
                 
-                if ((year%4 == 0 && year%400 == 0) || (year%100 != 0)){
+                if ((year%4 == 0 && year%100 != 0) || (year%400 == 0)){
                     System.out.println(year+" is a leap year");
                 }
                 else {
