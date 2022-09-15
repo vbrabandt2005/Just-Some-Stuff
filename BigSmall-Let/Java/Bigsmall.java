@@ -6,8 +6,25 @@ public class Bigsmall{
         System.out.println("BigSmall v1");
         System.out.println();
 
-        
+        try (Scanner sc = new Scanner(System.in)){
+            System.out.print("Give me sentence: ");
+            String sen = sc.nextLine();
+            System.out.println("Upper = 1 & Lower = 2");
+            System.out.print("Upper or Lower: ");
+            int unit = sc.nextInt();
+            System.out.println();
 
-
+            if (unit == 1){
+                System.out.println("Input: " + sen);
+                System.out.println("Output: " + sen.toUpperCase());
+            }
+            else if (unit == 2){
+                System.out.println("Input: " + sen);
+                System.out.println("Output: " + sen.toLowerCase());
+            }
+            else{
+                System.out.println("Please choose from the 2 choices!!");
+            }
+        }
     }
 }
