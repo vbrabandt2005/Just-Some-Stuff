@@ -35,7 +35,7 @@ public class TemperatureCon{
                 System.out.println("Fahrenheit = "+f);
                 double k = c + 273.15;
                 System.out.println("Kelvin = "+k); 
-                }
+            }
             
             else if(unit==2){ //Fahrenheit Input
                 System.out.print("Input Fahrenheit: ");
@@ -46,7 +46,7 @@ public class TemperatureCon{
                 System.out.println("Celcius = "+c);
                 double k = (f - 32) * 5/9 + 273.15;
                 System.out.println("Kelvin = "+k);  
-                }
+            }
 
             else if(unit==3){ //Kelvin Input
                 System.out.print("Input Kelvin: ");
@@ -57,11 +57,11 @@ public class TemperatureCon{
                 System.out.println("Celcius = "+c);
                 double f = (k - 273.15) * 9/5 + 32;
                 System.out.println("Fahrenheit = "+f);
-                }
+            }
             
             else{
                 System.out.println("Please enter a proper Unit");
-                }
+            }
         }
     }
 }
