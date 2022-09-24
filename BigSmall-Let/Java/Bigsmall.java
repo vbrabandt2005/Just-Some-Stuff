@@ -1,3 +1,13 @@
+/**
+ * name: BigSmall
+ * description:
+ * Input Upper Case text and you can choose to Lower case it and Stuff
+ * 
+ * author: @TheGoogleRider2
+ * version: (V1)
+ * date: 24/09/2022
+**/ 
+
 import java.util.*;
 
 public class Bigsmall{
