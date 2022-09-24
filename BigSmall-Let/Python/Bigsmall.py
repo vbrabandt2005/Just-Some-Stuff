@@ -3,13 +3,13 @@ print("BigSmall v1-Python")
 print()
 
 sen = (input("Give me sentence: "))
-unit = (input("Upper or Lower: "))
+unit = int(input("Upper = 1 or Lower = 2: "))
 print()
 
-
-if unit == "Upper" or "upper":
+if unit == 1:
     print("Input:",sen)
     print("Output:",sen.upper())
-elif unit == "Lower" or "lower":
+    
+elif unit == 2:
     print("Input:",sen)  
     print("Output:",sen.lower())
