@@ -10,7 +10,7 @@
 
 import java.util.*;
 
-public class Leapchecker{
+public class LeapChecker{
     public static void main(String[] args){
         System.out.println("Leap-Year-Checker_V.1.1");
         System.out.println();
