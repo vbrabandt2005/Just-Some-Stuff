@@ -1,9 +1,12 @@
-package piao;
+package piao.Java;
 
 /**
  * name: xue hua piao piao
  * description:
- * It opens a new tab in your default browser and plays the beutiful song of xue hua piao piao bei feng xiao xiao
+ * It asks the user if "xue hua piao piao" is the most beautiful song ever. If the user answers "yes",
+ * it opens the song in the default browser. If the user answers "no", it opens the song in the default
+ * browser every 2 minutes. If the user answers anything else, it opens "Never Gonna Give You Up" in
+ * the default browser.
  * 
  * it's also kind of a virus too but yeah
  * author: @TheGoogleRider
