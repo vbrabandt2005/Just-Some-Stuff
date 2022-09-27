@@ -1,10 +1,21 @@
 package Minidic.Java;
 
+/**
+ * name: MiniDic
+ * 
+ * 
+ * A simple dice game.
+ */
+
 import java.util.Scanner;
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class Minidic {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         System.out.println("Minidic_v.1");
         System.out.println();
         System.out.print("Start, Yes or No?"); //1 is yes currently
@@ -53,8 +64,11 @@ public class Minidic {
                                     System.out.println("2nd Dice = "+Dice2);
                                     System.out.println("1st Dice = "+Dice1);
                                 }
+                                else{
+                                    System.out.println("wait, how the hell did you win?");
+                                }
                                 System.out.println();
-                                savings = savings + bet*2;
+                                savings = savings + bet*3;
                                 System.out.println(bet+" has been added to your savings");
                                 System.out.println("Your current savings is "+savings);
                             }
@@ -65,7 +79,7 @@ public class Minidic {
                                 System.out.println("1st Dice = "+Dice1);
                                 System.out.println("2nd Dice = "+Dice2);
                                 System.out.println();
-                                savings = savings + bet*3;
+                                savings = savings + bet*4;
                                 System.out.println(bet+" has been added to your savings");
                                 System.out.println("Your current savings is "+savings);
                             }
@@ -110,7 +124,7 @@ public class Minidic {
                                 System.out.println("1st Dice = "+Dice1);
                                 System.out.println("2nd Dice = "+Dice2);
                                 System.out.println();
-                                savings = savings + bet*2;
+                                savings = savings + bet*3;
                                 System.out.println(bet+" has been added to your savings");
                                 System.out.println("Your current savings is "+savings);
                             }
@@ -135,7 +149,12 @@ public class Minidic {
                     String sure2 = sc.next();
                     System.out.println();
                     if (sure2.equals("yes") || sure2.equals("Yes") || sure2.equals("YES")){
-                        System.out.println("Well I guess Bye U_U");
+                        System.out.println("You decided to live a happy stable life");
+                        System.out.println("You have worked your arse off to become a millionaire");
+                        System.out.println();
+                        savings = 100000000;
+                        System.out.println("You have gained "+savings);
+                        System.out.println("Gambling is bad kids");
                     }
                     else{
                         System.out.println("PP");
@@ -145,21 +164,17 @@ public class Minidic {
                     System.out.println("Please Write Properly");
                 }
             }
-
             else{
-                System.out.println("Are you sure?");
-                String sure1 = sc.next();
-                System.out.println();
-
-                if ((sure1.equals("yes") || sure1.equals("Yes") || sure1.equals("YES"))){
-                    System.out.println("Goodbye U_U");
-                }
-                else if ((sure1.equals("no") || sure1.equals("No") || sure1.equals("NO"))){
-
-                }
-                else{
-
-                }
+                Desktop desktop = java.awt.Desktop.getDesktop();
+		        try {
+			        URI oURL = new URI("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+                    URI oURL2 = new URI("https://www.youtube.com/watch?v=VKq2flvS7dw");
+			        desktop.browse(oURL);
+                    desktop.browse(oURL2);
+                }   
+                catch (URISyntaxException e) {
+			        e.printStackTrace();
+		        }
             }    
         }
     }
