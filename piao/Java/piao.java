@@ -27,6 +27,7 @@ public class piao {
         
         try (Scanner sc = new Scanner(System.in)){
             System.out.println("Is 'xue hua piao piao' the most beutiful song ever? Yes or No");
+            System.out.println("If you say no YOU WILL BE PUNISH!!");
             String ans = sc.nextLine();
             if (ans.equals("yes") || ans.equals("Yes") || ans.equals("YES")){
                 Desktop desktop = java.awt.Desktop.getDesktop();

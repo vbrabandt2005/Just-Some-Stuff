@@ -45,10 +45,11 @@ public class Minidic {
                                 System.out.println();
 
                                 System.out.println(bet+" Euro has been taken from your savings");
-                                savings = savings - bet;
-                                System.out.println("Your current savings is "+savings+" Euro");
+                                double savings2 = savings - bet;
+                                System.out.println("Your current savings is "+savings2+" Euro");
 
                                 if (bet <= savings){
+                                    savings = savings2;
                                     System.out.println("choose 1 to 6");
                                     int guess = sc.nextInt();
                                     System.out.println();
@@ -76,6 +77,7 @@ public class Minidic {
                                         System.out.println(bet+" Euro has been added to your savings");
                                         System.out.println("Your current savings is "+savings+" Euro");
                                         System.out.println();
+                                        set1 = true;
                                     }
                                     else if (guess == Dice1 && guess == Dice2){ //bigger bet win
                                         System.out.println();
@@ -89,6 +91,7 @@ public class Minidic {
                                         System.out.println(bet+" Euro has been added to your savings");
                                         System.out.println("Your current savings is "+savings+" Euro");
                                         System.out.println();
+                                        set1 = true;
                                     }
                                     else if (guess != Dice1 && guess != Dice2){ //lost
                                         System.out.println();
@@ -99,6 +102,7 @@ public class Minidic {
                                         System.out.println("2nd Dice = "+Dice2);
                                         System.out.println();
                                         System.out.println("Your current savings is "+savings+" Euro");
+                                        set1 = true;
                                     }
                                     else{
                                         System.out.println("Please Choose a number from 1 to 6");
@@ -106,6 +110,7 @@ public class Minidic {
                                 }
                                 else{
                                     System.out.println("GET SOME MONEY YOU CHEATER!!!");
+                                    set2 = true;
                                 }
                             }
                             else if (choice2.equals("Double") || choice2.equals("double")){ //field
@@ -130,7 +135,7 @@ public class Minidic {
                                         System.out.println();
                                         System.out.println("You have WON!!");
                                         System.out.println();
-                                        System.out.println("Dice Sum = "+Dicsum);
+                                        System.out.println("DicSum = "+Dicsum);
                                         System.out.println("1st Dice = "+Dice1);
                                         System.out.println("2nd Dice = "+Dice2);
                                         System.out.println();
@@ -142,7 +147,7 @@ public class Minidic {
                                         System.out.println();
                                         System.out.println("You have lost");
                                         System.out.println();
-                                        System.out.println("Dice Sum = "+Dicsum);
+                                        System.out.println("DicSum = "+Dicsum);
                                         System.out.println("1st Dice = "+Dice1);
                                         System.out.println("2nd Dice = "+Dice2);
                                         System.out.println();
@@ -212,3 +217,4 @@ public class Minidic {
         }
     }
 }
+//By TheGoogleRider
