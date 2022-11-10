@@ -1,10 +1,9 @@
+/**
+ * It's a simple dice game that allows you to bet money and win or lose
+ */
 package Minidic.Java;
 
-/**
- * name: MiniDic
- *
- * It's a simple dice game that allows you to bet on the outcome of two dice
- */
+
 
 import java.util.Scanner;
 import java.awt.Desktop;

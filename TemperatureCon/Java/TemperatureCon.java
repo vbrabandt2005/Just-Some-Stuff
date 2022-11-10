@@ -9,6 +9,9 @@ package TemperatureCon.Java;
  * date: 12/09/2022
 **/
 
+/**
+ * This class is a temperature converter that converts Celcius, Fahrenheit, and Kelvin.
+ */
 import java.util.*;
 
 public class TemperatureCon{
