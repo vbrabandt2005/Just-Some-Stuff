@@ -1,49 +1,60 @@
 # name: TemperatureCon
 # description:
-# Simple Temperature Converter in Python
+# Simple Temperature Converter in Python with function and loop
 #
 # author: @TheGoogleRider
-# version: 2.1
-# date: 09/09/2022
+# version: 3
+# date: 06/04/2024
+
+def convert_temperature(unit, value):
+  if unit == 1:
+    k = value + 273.15
+    f = value * 9/5 + 32
+    print("Input value = ",value)
+    print("Kelvin = ",k)
+    print("Fahrenheit = ",f)
+    print()
+  elif unit == 2:
+    c = (value - 32) * 5/9
+    k = (value - 32) * 5/9 + 273.15
+    print("Input value = ",value)
+    print("Celsius = ",c)
+    print("Kelvin = ",k)
+    print()
+  elif unit == 3:
+    c = value - 273.15
+    f = (value - 273.15) * 9/5 + 32
+    print("Input value = ",value)
+    print("Celsius = ",c)
+    print("Fahrenheit = ",f)
+    print()
+  else:
+    print("Please enter a valid option (1, 2, or 3)")
 
 print("TemperatureCon_2.1-Python")
 print()
-print("Enter '1' for Celsius")
-print("Enter '2' for Fahrenheit")
-print("Enter '3' for Kelvin")
-print()
-n = int(input("Enter the unit you want to convert: "))
-print()
 
-for _ in range(n):
-    if n == 1:
-        c = float(input("Input Celsius: "))
-        print()
-        
-        k = c + 273.15
-        print("Kelvin = ",k)
-        f = c * 9/5 + 32
-        print("Fahrenheit = ",f)
+while True:
+  print("Enter '1' for Celsius")
+  print("Enter '2' for Fahrenheit")
+  print("Enter '3' for Kelvin")
+  print("Enter 'q' to quit")
+  print()
+  n = input("Enter the unit you want to convert (or 'q' to quit): ")
 
-    elif n == 2:
-        f = float(input("Input Fahrenheit: "))
-        print()
+  if n == 'q':
+    break
 
-        c = (f - 32) * 5/9
-        print("Celsius = ",c)
-        k = (f - 32) * 5/9 + 273.15
-        print("Kelvin = ",k)
-    elif n == 3:
-        k = float(input("Input Kelvin: "))
-        print()
+  try:
+    n = int(n)
+  except ValueError:
+    print("Please enter a valid option (1, 2, 3, or 'q')")
+    continue
 
-        print("Kelvin Input = ",k)
-        c = k - 273.15
-        print("Celsius = ",c)
-        f = (k - 273.15) * 9/5 + 32
-        print("Fahrenheit = ",f)
-    else:
-        print("Please enter an option from the screen")
-    exit()
-    
-#By TheGoogleRider
+  # Get temperature value
+  value = float(input("Input value for the chosen unit: "))
+
+  # Call the conversion function
+  convert_temperature(n, value)
+
+print("Exiting Temperature Converter...")
